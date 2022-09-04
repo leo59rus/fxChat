@@ -11,8 +11,8 @@
     </padding>
     <MenuBar>
         <Menu text="Menu">
-            <MenuItem text="Rules of the game" onAction="#clickRules"/>
-            <MenuItem text="New game" onAction="#clickNewGame"/>
+            <MenuItem text="Rules of the chat" onAction="#clickRules"/>
+            <MenuItem text="Clear Chat" onAction="#clickClearChat"/>
             <MenuItem text="Exit" onAction="#clickExit"/>
 
 
@@ -21,7 +21,7 @@
     <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS"/>
     <HBox spacing="10">
         <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS"/>
-        <Button text="Check" defaultButton="true" onAction="#clickCheckButton"/>
+        <Button text="Send" defaultButton="true" onAction="#clickSend"/>
     </HBox>
 </VBox>
 
