@@ -4,24 +4,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="ru.gb.fxjava.ChatController">
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.fxjava.ChatController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
-    <MenuBar>
+    <MenuBar prefHeight="27.0" prefWidth="10.0">
         <Menu text="Menu">
-            <MenuItem text="Rules of the chat" onAction="#clickRules"/>
-            <MenuItem text="Clear Chat" onAction="#clickClearChat"/>
-            <MenuItem text="Exit" onAction="#clickExit"/>
+            <MenuItem onAction="#clickRules" text="Rules of the chat" />
+            <MenuItem onAction="#clickClearChat" text="Clear Chat" />
+            <MenuItem onAction="#clickExit" text="Exit" />
 
 
         </Menu>
     </MenuBar>
-    <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS"/>
+
+    <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS" />
     <HBox spacing="10">
-        <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS"/>
-        <Button text="Send" defaultButton="true" onAction="#clickSend"/>
+        <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS" />
+        <Button defaultButton="true" onAction="#clickSend" text="Send" />
     </HBox>
 </VBox>
-
