@@ -22,8 +22,8 @@ public class ChatController {
 
     public void clickClearChat() {//menu
         historyArea.clear();
-        historyArea.appendText("\n--- Я всё удалил, можешь опять " +
-                                       "про писать про Чака)" +
+        historyArea.appendText("\n--- Я всё удалил, можешь опять "
+                                       + "про писать про Чака)" +
                                        " ---\n");
     }
 
@@ -32,12 +32,12 @@ public class ChatController {
     }
 
     public void clickRules() {
-        historyArea.appendText("Правила чата: \nПиши сюда что " +
-                                       "хочешь, \n" +
+        historyArea.appendText("\n***********************************\n" +
+                                       "Правила чата: \nПиши " +
+                                       "сюда что " + "хочешь, \n" +
                                        "хоть про Чака Норриса, " +
-                                       "\nвсё" +
-                                       " " +
-                                       "равно этого" +
-                                       " никто не увидит\n\n");
+                                       "\nвсё" + " " + "равно этого" +
+                                       " никто не " + "увидит\n\n" +
+                                       "***********************************\n");
     }
 }
