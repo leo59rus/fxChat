@@ -23,7 +23,7 @@ public class ChatController {
     public void clickClearChat() {//menu
         historyArea.clear();
         historyArea.appendText("\n--- Я всё удалил, можешь опять "
-                                       + "про писать про Чака)" +
+                                       + "писать про Чака)" +
                                        " ---\n");
     }
 
