@@ -1,26 +1,34 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gb.fxjava.ChatController">
+<?import java.awt.Insets?>
+<?import java.awt.MenuBar?>
+<?import java.awt.Menu?>
+<?import java.awt.MenuItem?>
+<?import java.awt.TextArea?>
+<?import java.awt.TextField?>
+<?import java.awt.Button?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="ru.gb.fxjava.ChatController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
-    <MenuBar prefHeight="27.0" prefWidth="10.0">
+    <MenuBar>
         <Menu text="Menu">
-            <MenuItem onAction="#clickRules" text="Rules of the chat" />
-            <MenuItem onAction="#clickClearChat" text="Clear Chat" />
-            <MenuItem onAction="#clickExit" text="Exit" />
+            <MenuItem text="Rules of the game" onAction="#clickRules"/>
+            <MenuItem text="New game" onAction="#clickNewGame"/>
+            <MenuItem text="Exit" onAction="#clickExit"/>
 
 
         </Menu>
     </MenuBar>
-
-    <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS" />
+    <TextArea fx:id="historyArea" editable="false" VBox.vgrow="ALWAYS"/>
     <HBox spacing="10">
-        <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS" />
-        <Button defaultButton="true" onAction="#clickSend" text="Send" />
+        <TextField fx:id="userAnswer" HBox.hgrow="ALWAYS"/>
+        <Button text="Check" defaultButton="true" onAction="#clickCheckButton"/>
     </HBox>
 </VBox>
