@@ -1,9 +1,17 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import java.awt.Insets?>
+<?import java.awt.MenuBar?>
+<?import java.awt.Menu?>
+<?import java.awt.MenuItem?>
+<?import java.awt.TextArea?>
+<?import java.awt.TextField?>
+<?import java.awt.Button?>
 <VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1"
       xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="ru.gb.fxjava.ChatController">
     <padding>
@@ -24,4 +32,3 @@
         <Button text="Check" defaultButton="true" onAction="#clickCheckButton"/>
     </HBox>
 </VBox>
-
